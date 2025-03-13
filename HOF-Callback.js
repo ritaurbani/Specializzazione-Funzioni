@@ -1,13 +1,14 @@
-
-
+//invece di && uso semplice prima() e nella dichiarazione passo una funzione di default che non fa nulla
+//prima = () => {}, dopo = () => {}
 function funzioneSample(prima, dopo) {
 
-    prima()
+    //se prima ha assunto un valore lo eseguo
+    prima && prima() 
 //timer take function as their parameter
     setTimeout(() => {
         console.log("sono passati 1000ms");
         //dopo aver aspettato i ms
-        dopo();
+        dopo && dopo();
 
     }, 1000);
 }
@@ -22,7 +23,7 @@ funzioneSample(
     () => console.log("fine") 
 )
 
-//se non passo uno dei parametri => errore (inserisci controlli per evitare)
+//se non passo uno dei parametri => errore (per evitare errore inserisci controlli o dai default empty function)
 funzioneSample(
     () => console.log("sto aspettando"), //questa e`la funzione prima
 )
