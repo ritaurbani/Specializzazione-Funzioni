@@ -27,3 +27,4 @@ funzioneSample(
 funzioneSample(
     () => console.log("sto aspettando"), //questa e`la funzione prima
 )
+
