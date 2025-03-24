@@ -6,7 +6,6 @@ function handleError(error) {
 
 //fetch ci ritorna promise>la promise di questo fetch ci ritorna response > 
 // (oggetto di tipo promise particolare del fetch)
-//fetchRequest > oggetto di tipo promise 
 //attenzione anche allo stato(pending o altro)
 //in console se vedi promise> response, tra i vari medodi c e funzione json
 const fetchRequest = fetch(`http://dummyjson.com/users/1`)

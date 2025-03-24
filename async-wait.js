@@ -59,7 +59,7 @@ getPost(1)
 
 //ADDITIONAL NOTES
 
-//Come scrivere asyn con funzione anonima associata a variabile:
+//Come scrivere async con funzione anonima associata a variabile:
 const getPost = async function(id) {
 
 }

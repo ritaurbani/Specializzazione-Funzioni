@@ -25,12 +25,10 @@ const getUser = async id => {
     //3.CON PROMISEALL
     const promises = []//avra la promises dal ciclo for
     for(let id=1;id<=5; id++){//se invece di 5 metto 50 sara velocissimo
-        const userPromise = getUser(id)//in questa variabile non raccolgo il risultato di resolve, ma la promise in se
+        const userPromise = getUser(id)//in questa variabile non raccolgo il risultato di resolve, ma la promise in se quindi non uso await
         promises.push(userPromise)
     }
     const users = await Promise.all(promises) //promiseAll ritorna array di risultati -array ricevuto in un colpo solo
-    console.log(users)//le request ora verrannoo in parallelo
-
-
+    console.log(users)//le request ora verranno in parallelo
 })()
 

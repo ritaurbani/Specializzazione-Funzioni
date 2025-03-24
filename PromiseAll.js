@@ -1,6 +1,8 @@
 //Promise.all() ci permette di gestire operazioni asincrone multiple in parallelo
+
 //ci ritorna un altra promise che risolve un array con i risultati risolti delle varie promise nel loro ordine
 //promise all ritorna array di risultati
+
 //CHIAMATE A CATENA
 
 const eseguiTask = (durata) => {//questa funzione crea una promise risolta dopo durata ms
@@ -19,6 +21,7 @@ const eseguiTask = (durata) => {//questa funzione crea una promise risolta dopo 
 // eseguiTask(1000)//restituisce promise che si risolvera dopo 1 sec
 // .then(msg => console.log(msg))//eseguito quando la promise si risolve, nel .then mostrero quello contenuto nel resolve
 // .catch()//eseguito se c`e`un errore
+
 //PROBLEMA CON ASYNC-AWAIT che interrompe il flusso
 
 //Con await assegnamo il valore direttamente a una variabile(const messaggio = await eseguiTask(1000);).
