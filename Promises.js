@@ -63,7 +63,8 @@ const getUser = (id) => {
     return promessa
 }
 //La funzione ritorna la Promise, permettendoci di usare .then() e .catch() quando chiamiamo getUser(id).
-//per chiamarla, metto id, mi ritorna promise quindi attacco .then
+//per chiamarla, metto id, 
+// THEN RACCOGLIE IL VALORE RESOLVE DELLA PROMISE - mi ritorna promise quindi attacco .then
 getUser(1)//ritorna promise
 .then(data => console.log(data))//passiamo dati ottenuti
 .catch(error => console.error(error)) //funzione che prende l errore e me lo stampa in console
@@ -97,4 +98,6 @@ lanciaMoneta("testa")//ritorna una promise
 .catch(error => console.error(error)) //stampo error nel caso in cui perdo
 
 /////////////GEOLOCATION////////////////////////
+
+
 
